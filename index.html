@@ -9,25 +9,35 @@
 </head>
 <body>
     
-    <header>
-        <nav>
-            <h1> Mini portal de Colombia </h1>
-            <a href="platos.html" class="nav-link" > Ir a sabores de Colombia </a>
-        </nav>
+<header class="hero-header">
+        <div class="hero-content">
+            <h1>Mini Portal de Colombia</h1>
+            <p>Un espacio interactivo para explorar la riqueza turística, cultural y natural de nuestro hermoso país a través de datos en tiempo real.</p>
+            <a href="platos.html" class="nav-link">Ir a Sabores de Colombia 🍲</a>
+        </div>
     </header>
 
     <main>
+        <section class="intro-seccion">
+            <h2>Descubre la Magia de Colombia</h2>
+            <p>Explora los rincones más emblemáticos, paisajes inigualables y destinos turísticos imperdibles de nuestro país. Una muestra de la riqueza cultural y natural que nos define.</p>
+        </section>
 
         <section>
-            <h2> Guía turistica de Colombia </h2>
-            <div id="mensaje-carga" class="loading" > Cargando atracciones turísticas... </div>
-
+            <!-- Elementos de carga y contenedor -->
+            <div id="mensaje-carga" class="loading">Cargando atracciones turísticas...</div>
             <div id="contenedor-atracciones" class="grid-tarjetas"></div>
         </section>
 
     </main>
 
+    <footer>
+        <p>Desarrollado con ❤️ por <strong>Sara Villanueva Caro</strong></p>
+        <p>Mini Portal de Colombia - Campuslands</p>
+    </footer>
+
     <script src="JS/turistica.js" ></script>
+
 
 </body>
 </html>

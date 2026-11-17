@@ -128,3 +128,110 @@ h2 {
     font-size: 0.95rem;
     color: #555;
 }
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+    background-color: var(--azul-colombia);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    border-top: 4px solid var(--amarillo-colombia);
+    border-bottom: 4px solid var(--rojo-colombia);
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    color: #e0e0e0;
+}
+
+footer strong {
+    color: var(--amarillo-colombia);
+}
+
+/* --- SECCIÓN DE INTRODUCCIÓN Y DESCRIPCIÓN --- */
+.intro-seccion {
+    background-color: var(--color-tarjeta);
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    margin-bottom: 2rem;
+    border-left: 6px solid var(--amarillo-colombia);
+    border-right: 6px solid var(--rojo-colombia);
+}
+
+.intro-seccion h2 {
+    color: var(--azul-colombia);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    border-left: none; /* Quitamos el borde heredado para que luzca propio */
+    padding-left: 0;
+}
+
+.intro-seccion p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* --- ENCABEZADO PROTAGONISTA (HERO HEADER) --- */
+.hero-header {
+    background: linear-gradient(135deg, var(--azul-colombia), #001a2e);
+    color: white;
+    padding: 3rem 1.5rem 4rem 1.5rem;
+    text-align: center;
+    border-bottom: 6px solid var(--amarillo-colombia);
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.nav-superior {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid var(--rojo-colombia);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.hero-header p {
+    font-size: 1.15rem;
+    color: #d1d8e0;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Botón de navegación en el header */
+.nav-link {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background-color: var(--amarillo-colombia);
+    color: var(--azul-colombia);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--rojo-colombia);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(203, 17, 38, 0.4);
+}

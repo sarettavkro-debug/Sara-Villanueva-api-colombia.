@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de Colombia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+    <header class="hero-header">
+        <div class="hero-content">
+            <h1>Sabores de Colombia</h1>
+            <p>Un recorrido gastronómico imperdible por los platos típicos que definen la tradición, el sabor y la sazón de cada región colombiana.</p>
+            <!-- Botón abajo y centrado -->
+            <a href="index.html" class="nav-link">← Volver a la Guía Turística</a>
+        </div>
+    </header>
+
+<main>
+        <!-- Sección de introducción -->
+        <section class="intro-seccion">
+            <h2>Sabores de Colombia (Platos Típicos)</h2>
+            <p>Un recorrido gastronómico por los platos típicos que definen la cultura, la tradición y la sazón única de las diferentes regiones de nuestro país.</p>
+        </section>
+
+        <section>
+            <div id="mensaje-carga-platos" class="loading">Cargando platos típicos...</div>
+            <p style="margin-bottom: 1.5rem; font-weight: 600; color: var(--azul-colombia);">
+                Total de platos mostrados: <span id="contador-platos">0</span>
+            </p>
+
+            <div id="contenedor-platos" class="grid-tarjetas"></div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Desarrollado con ❤️ por <strong>Sara Villanueva Caro</strong></p>
+        <p>Mini Portal de Colombia - Campuslands</p>
+    </footer>
+
+    <script src="js/platos.js"></script>
+
+</body>
+</html>

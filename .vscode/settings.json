@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "HTML",
-        "JS"
+        "JS",
+        "CSS"
     ]
 }

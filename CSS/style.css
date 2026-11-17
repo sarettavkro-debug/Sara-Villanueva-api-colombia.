@@ -1,0 +1,130 @@
+
+:root {
+    --color-fondo: #f8f9fa;
+    --color-texto: #333333;
+    --color-tarjeta: #ffffff;
+    --amarillo-colombia: #ffcc00;
+    --azul-colombia: #002b49;
+    --rojo-colombia: #ce1126;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+header {
+    background: linear-gradient(135deg, var(--azul-colombia), #004080);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--amarillo-colombia);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    background-color: var(--amarillo-colombia);
+    color: var(--azul-colombia);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--rojo-colombia);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--azul-colombia);
+    margin-bottom: 1rem;
+    border-left: 5px solid var(--rojo-colombia);
+    padding-left: 10px;
+}
+
+.loading {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+/* --- GRID DE TARJETAS (Requisito Grid / Flexbox) --- */
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 1.5rem;
+}
+
+/* --- DISEÑO DE LAS TARJETAS --- */
+.tarjeta {
+    background-color: var(--color-tarjeta);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    /* Efecto visual suave exigido en la guía */
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--amarillo-colombia);
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-top-color: var(--rojo-colombia);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.contenido-tarjeta h3 {
+    font-size: 1.25rem;
+    color: var(--azul-colombia);
+}
+
+.contenido-tarjeta p {
+    font-size: 0.95rem;
+    color: #555;
+}
